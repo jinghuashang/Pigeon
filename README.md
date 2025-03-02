@@ -8,6 +8,9 @@
 
 > 上面链接为本人博客，可以测试发布内容，无意义内容请设置仅自己可见，或者发布后删除，避免影响版面整洁。
 
+## ⚠️ 停更说明
+这个项目已经很老了，且由于代码结构非常混乱，毫无设计可言，因此我打算放弃这个项目。1.0.182 将是本项目的最后一次大更新，之后我将不会再添加新功能和特性，只会修复一些安全漏洞。未来我可能会考虑从头开始开发一个类似的程序。
+
 ## 简介
 
 你是否有些临时的想法，或者一小段代码，想找一个地方记下来？
@@ -35,35 +38,31 @@
 
 ## 安装
 
-Pigeon 的安装配置非常简单，只需要简单三行命令以及一些配置即可开始使用。
+Pigeon 的安装配置非常简单，只需要简单几行命令以及一些配置即可开始使用。
 
-首先将项目拉取到本地
+> 建议始终通过 clone 获取最新的代码，因为一些小的修复我可能会懒得发 Release。
 
-```
-git clone https://github.com/kasuganosoras/Pigeon
-```
+首先将项目拉取到本地网站目录下
 
-然后
-
-```
-cd Pigeon/
-php install.php
+```bash
+cd /path/to/your/webroot
+git clone https://github.com/kasuganosoras/Pigeon .
+chown -R www:www /path/to/your/webroot
 ```
 
-根据提示进行配置即可。
-
-安装程序是没有界面的，请通过命令行执行 `install.php`，而不是通过网页访问它。
+然后访问 `http://你的域名/install.php` 开始安装。
 
 > 如需手动安装（不使用安装程序），请 [点击这里阅读安装方法](https://github.com/kasuganosoras/Pigeon/wiki/Install#%E6%89%8B%E5%8A%A8%E5%AE%89%E8%A3%85-pigeon)
 
 ## 未来计划
+~应该永远不会实现~
 
 - [x] 管理员后台系统（已实现）
 - [ ] 支持 OAuth 登录
 - [x] 完善的 API 系统
 - [ ] 支持对接其他平台
 
-## 关于 Admin Console
+## 管理员后台
 
 管理员后台的地址是：`/admin.php`
 
@@ -73,10 +72,5 @@ php install.php
 
 ## 开源协议
 
-本项目使用 MIT 协议开源，可以用于商业使用
+本项目使用 MIT 协议开源，您可以在遵守协议的情况下自由使用本项目。
 
-## 捐助开发者
-
-如果你觉得这个项目对你有帮助，欢迎赞助我
-
-![img](https://i.imgur.com/1EuGD9o.png)
